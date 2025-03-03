@@ -271,73 +271,94 @@ function App() {
       </section>
 
       {/* Footer Section */}
-      <footer className="bg-black text-white py-12 px-6">
-        <div className="container mx-auto">
-          <div className="flex flex-col md:flex-row justify-between">
-            <div className="mb-8 md:mb-0">
-              <h3 className="text-2xl font-bold mb-4">Have a question? Get in touch.</h3>
-              <p className="mb-4">Thank you for visiting our website! If you have any questions or queries, drop us a message, and we'll get back to you promptly. Your time is valuable to us!</p>
-              
-              <div className="space-y-2">
-                <div className="flex items-center gap-2">
-                  <Mail size={20} />
-                  <span>codenexsrm@gmail.com</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Instagram size={20} />
-                  <span>@codenexsrm</span>
-                </div>
-              </div>
-            </div>
+      <footer className="bg-gray-900 text-white py-16 px-6">
+      <div className="container mx-auto">
+        <div className="flex flex-col md:flex-row justify-between gap-12">
+          {/* Left section - Contact */}
+          <div className="mb-8 md:mb-0">
+            <h3 className="text-4xl font-bold mb-6">Have a question? Get in touch.</h3>
+            <p className="mb-8 text-lg max-w-xl">
+              Thank you for visiting our website! If you have any questions or queries, drop us a message, and we'll get back to you promptly. Your time is valuable to us!
+            </p>
             
-            <div className="mb-8 md:mb-0">
-              <div className="flex items-center gap-2 mb-4">
-                <span className="text-blue-400 text-3xl">C</span>
-                <h3 className="text-xl font-bold">Codenex on campus</h3>
+            <div className="space-y-4">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 flex items-center justify-center bg-white/10 rounded-md">
+                  <Mail size={24} />
+                </div>
+                <span className="text-xl">codenexsrm@gmail.com</span>
               </div>
-              
-              <p className="max-w-xs">
-                Codenex, a tech club of SRM, is a dynamic hub for innovation and collaboration. Redefining the boundaries of technology, we empower students to build, learn, and lead, fostering a community where ideas transcend limits.
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-2 gap-x-12 gap-y-4">
-              <div>
-                <h4 className="text-lg font-bold mb-4">Quick Links</h4>
-                <ul className="space-y-2">
-                  <li><a href="#home" className="hover:text-blue-400">Home</a></li>
-                  <li><a href="#about" className="hover:text-blue-400">About</a></li>
-                  <li><a href="#timeline" className="hover:text-blue-400">Timeline</a></li>
-                  <li><a href="#tracks" className="hover:text-blue-400">Tracks</a></li>
-                  <li><a href="#panel" className="hover:text-blue-400">Panel</a></li>
-                </ul>
-              </div>
-              
-              <div>
-                <h4 className="text-lg font-bold mb-4">Codenex socials</h4>
-                <ul className="space-y-2">
-                  <li className="flex items-center gap-2">
-                    <Linkedin size={16} />
-                    <a href="#" className="hover:text-blue-400">@codenexsrm</a>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Instagram size={16} />
-                    <a href="#" className="hover:text-blue-400">@codenexsrm</a>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Mail size={16} />
-                    <a href="#" className="hover:text-blue-400">codenexsrm@gmail.com</a>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Phone size={16} />
-                    <a href="#" className="hover:text-blue-400">+91 92876 52739</a>
-                  </li>
-                </ul>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 flex items-center justify-center bg-white/10 rounded-md">
+                  <Instagram size={24} />
+                </div>
+                <span className="text-xl">@codenexsrm</span>
               </div>
             </div>
           </div>
+          
+          {/* Middle section - Logo and description */}
+          <div className="mb-8 md:mb-0">
+            <div className="flex items-center gap-4 mb-6">
+            <div className="w-16 h-16 rounded-full bg-transparent flex items-center justify-center">
+                <img src="/logo.png" alt="Logo" className="w-12 h-12 rounded-full object-cover" />
+             </div>
+              <div>
+                <h3 className="text-3xl font-bold">Codenex on</h3>
+                <h3 className="text-3xl font-bold">campus</h3>
+              </div>
+            </div>
+            
+            <p className="max-w-xs text-gray-300">
+              Codenex, a tech club of SRM, is a dynamic hub for innovation and collaboration. Redefining the boundaries of technology, we empower students to build, learn, and lead, fostering a community where ideas transcend limits.
+            </p>
+          </div>
+          
+          {/* Right section - Links and socials */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+            <div>
+              <h4 className="text-2xl font-bold mb-6">Quick Links</h4>
+              <ul className="space-y-4">
+                <li><a href="#home" className="text-xl hover:text-cyan-400 transition-colors">Home</a></li>
+                <li><a href="#about" className="text-xl hover:text-cyan-400 transition-colors">About</a></li>
+                <li><a href="#timeline" className="text-xl hover:text-cyan-400 transition-colors">Timeline</a></li>
+                <li><a href="#tracks" className="text-xl hover:text-cyan-400 transition-colors">Tracks</a></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 className="text-2xl font-bold mb-6">Codenex socials</h4>
+              <ul className="space-y-4">
+                <li className="flex items-center gap-4">
+                  <div className="w-8 h-8 flex items-center justify-center bg-white/10 rounded-md">
+                    <Linkedin size={20} />
+                  </div>
+                  <a href="#" className="hover:text-cyan-400 transition-colors">@codenexsrm</a>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="w-8 h-8 flex items-center justify-center bg-white/10 rounded-md">
+                    <Instagram size={20} />
+                  </div>
+                  <a href="#" className="hover:text-cyan-400 transition-colors">@codenexsrm</a>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="w-8 h-8 flex items-center justify-center bg-white/10 rounded-md">
+                    <Mail size={20} />
+                  </div>
+                  <a href="#" className="hover:text-cyan-400 transition-colors">codenexsrm@gmail.com</a>
+                </li>
+                <li className="flex items-center gap-4">
+                  <div className="w-8 h-8 flex items-center justify-center bg-white/10 rounded-md">
+                    <Phone size={20} />
+                  </div>
+                  <a href="#" className="hover:text-cyan-400 transition-colors">+91 92876 52739</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </footer>
+      </div>
+    </footer>
     </div>
   );
 }
