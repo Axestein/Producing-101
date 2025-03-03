@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 
-
 const HomePage = () => {
   const [scrolled, setScrolled] = useState(false);
   
