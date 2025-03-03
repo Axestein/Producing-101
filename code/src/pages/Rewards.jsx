@@ -38,11 +38,12 @@ const Rewards = () => {
   }, []);
 
   return (
-    <div className="relative flex flex-col items-center w-full bg-black text-white p-8 min-h-screen overflow-hidden">
+    <div className="relative flex flex-col items-center w-full bg-black text-white p-8 min-h-screen overflow-hidden g" style={{ backgroundImage: 'url(/bgImage.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+
       {/* Placeholder for background image - you'll replace this */}
       <div className="absolute top-0 left-0 w-full h-full -z-10">
         {/* This div will be replaced with your background image */}
-        <div className="w-full h-full bg-black"></div>
+
         
         {/* Keeping the glowing orbs for effect */}
         <div 
