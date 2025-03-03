@@ -195,47 +195,84 @@ function App() {
       </section>
 
       {/* Rewards Section */}
-      <section id="rewards" className="min-h-screen bg-gradient-to-br from-black via-purple-900 to-blue-900 text-white py-16 px-6">
-        <div className="container mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center">Rewards</h2>
+      <div className="flex flex-col items-center w-full bg-black text-white p-8 min-h-screen">
+      {/* Header */}
+      <h1 className="text-5xl font-bold text-white mb-12">Rewards</h1>
+      
+      {/* Content container */}
+      <div className="w-full max-w-5xl flex flex-col md:flex-row justify-between items-center gap-8">
+        {/* Left section */}
+        <div className="flex flex-col items-center md:items-start w-full md:w-1/2">
+          <div className="relative mb-6">
+            <img 
+              src="/api/placeholder/300/250" 
+              alt="Team meeting illustration" 
+              className="w-64"
+            />
+          </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="bg-black bg-opacity-40 p-8 rounded-lg">
-              <div className="flex justify-center mb-6">
-                {/* Placeholder for the team illustration */}
-                <div className="w-64 h-48 bg-gray-800 rounded-lg flex items-center justify-center">
-                  <span className="text-sm text-gray-400">Team Illustration</span>
-                </div>
-              </div>
-              
-              <p className="text-lg mb-2">The top teams win an</p>
-              <p className="text-xl mb-2">
-                <span className="text-red-400">internship</span> at 
-                <span className="text-green-400 ml-2">Niramaya Health Tech</span>, where 
-                <span className="italic ml-1">innovation meets impact</span>.
-              </p>
-              
-              <p className="text-xl font-bold mt-6">Pitch. Build. Intern.</p>
-            </div>
+          <div className="text-center md:text-left">
+            <p className="text-lg mb-2">
+              The top teams win an 
+              <span className="text-purple-400 font-medium"> internship </span>
+              at
+            </p>
+            <p className="text-xl text-green-400 font-semibold mb-2">
+              Niramaya Health Tech
+              <span className="text-white">, where</span>
+            </p>
+            <p className="mb-4">
+              <span className="italic">innovation</span> meets <span className="italic">impact</span>.
+            </p>
             
-            <div className="bg-black bg-opacity-40 p-8 rounded-lg">
-              <div className="flex justify-center mb-6">
-                {/* Placeholder for the study illustration */}
-                <div className="w-64 h-48 bg-gray-800 rounded-lg flex items-center justify-center">
-                  <span className="text-sm text-gray-400">Study Illustration</span>
+            <p className="font-semibold text-xl mb-6">Pitch. Build. Intern</p>
+          </div>
+        </div>
+        
+        {/* Right section */}
+        <div className="flex flex-col items-center md:items-start w-full md:w-1/2">
+          <div className="text-center md:text-left mb-6">
+            <p className="text-lg mb-2">
+              Top teams will receive a free subscription to 
+              <span className="text-blue-400 font-medium"> premium placement preparation </span>
+            </p>
+            <p className="mb-2">
+              material, exclusively offered by
+            </p>
+            <p className="text-xl text-green-400 font-semibold mb-2">
+              Codenex
+              <span className="text-white"> to elevate their career journey.</span>
+            </p>
+          </div>
+          
+          <div className="relative flex justify-center items-center">
+            <img 
+              src="/api/placeholder/300/200" 
+              alt="Student working illustration" 
+              className="w-64"
+            />
+            <div className="absolute -top-4 right-0">
+              <div className="rounded-full bg-white w-10 h-10 flex items-center justify-center">
+                <div className="w-8 h-8 rounded-full border-2 border-gray-800 flex items-center justify-center">
+                  <div className="w-1 h-4 bg-gray-800 absolute"></div>
+                  <div className="w-3 h-1 bg-gray-800 absolute rotate-90 translate-x-1"></div>
                 </div>
               </div>
-              
-              <p className="text-lg mb-2">Top teams will receive a free subscription to</p>
-              <p className="text-xl">
-                <span className="text-purple-400">premium placement preparation</span> material, exclusively offered by 
-                <span className="text-blue-400 ml-2">Codenex</span> to elevate their career journey.
-              </p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+      
+      {/* Background gradient effects */}
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-purple-700 rounded-full blur-3xl opacity-20"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-blue-700 rounded-full blur-3xl opacity-20"></div>
+      </div>
+    </div>
+  );
+};
 
+      {/* About Niramaya Section */}
       <section className="relative w-full min-h-screen bg-black text-white flex flex-col items-center justify-center py-16 px-6 overflow-hidden">
       {/* Background gradient effects */}
       <div className="absolute top-1/3 left-1/2 w-64 h-64 rounded-full bg-purple-600 filter blur-3xl opacity-20 transform -translate-x-1/2 -translate-y-1/2"></div>
