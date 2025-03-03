@@ -4,7 +4,7 @@ import bgabout from "../assets/bgabout.png";
 
 const Aboutevent = () => {
   return (
-    <div
+    <div 
       className="relative w-full bg-cover bg-center py-20"
       style={{ backgroundImage: `url(${bgabout})` }}
     >

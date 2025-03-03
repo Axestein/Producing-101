@@ -77,7 +77,7 @@ const TimeLine = () => {
                 <div 
                   className={`hidden md:block absolute top-6 h-1 bg-gradient-to-r from-blue-400 to-purple-500 w-8 ${
                     index % 2 === 0 ? 'left-full' : 'right-full'
-                  }`}
+                  }`} 
                 ></div>
                 
                 <h3 className="text-xl font-bold text-white mb-2">{step.title}</h3>
