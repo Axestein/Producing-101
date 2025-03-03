@@ -19,7 +19,6 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/aboutus" element={<Aboutus />} />
           <Route path="/aboutevent" element={<Aboutevent />} />
           <Route path="/timeline" element={<TimeLine />} />
           <Route path="/tracks" element={<Tracks />} />
@@ -30,7 +29,6 @@ function App() {
         <TimeLine />
         <Tracks />
         <Rewards />
-        <Aboutus />
         <AboutNiramaya/>
         <Footer />
       </div>
