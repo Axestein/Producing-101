@@ -5,12 +5,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from "../src/pages/Home";
 import Aboutus from "../src/pages/Aboutus";
 import Aboutevent from "../src/pages/Aboutevent";
-import Faq from "../src/pages/Faq";
 import Footer from "../src/pages/Footer";
 import Tracks from "../src/pages/Tracks";
 import TimeLine from "../src/pages/TimeLine";
 import Rewards from "../src/pages/Rewards";
 import Navbar from "../src/pages/Navbar";
+import AboutNiramaya from './pages/AboutNiramaya';
 
 function App() {
   return (
@@ -24,14 +24,14 @@ function App() {
           <Route path="/timeline" element={<TimeLine />} />
           <Route path="/tracks" element={<Tracks />} />
           <Route path="/rewards" element={<Rewards />} />
-          <Route path="/faq" element={<Faq />} />
+          <Route path="/AboutNiramaya" element={<AboutNiramaya />} />
         </Routes>
         <Aboutevent />
         <TimeLine />
         <Tracks />
         <Rewards />
         <Aboutus />
-        <Faq />
+        <AboutNiramaya/>
         <Footer />
       </div>
     </Router>
