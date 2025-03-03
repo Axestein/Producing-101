@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from "../src/pages/Home";
 import Aboutus from "../src/pages/Aboutus";
 import Aboutevent from "../src/pages/Aboutevent";
-import Faq from "../src/pages/Faq";
+import AboutNiramaya from "./pages/AboutNiramaya";
 import Footer from "../src/pages/Footer";
 import Tracks from "../src/pages/Tracks";
 import TimeLine from "../src/pages/TimeLine";
@@ -31,7 +31,7 @@ function App() {
         <Tracks />
         <Rewards />
         <Aboutus />
-        <Faq />
+        <AboutNiramaya/>
         <Footer />
       </div>
     </Router>
