@@ -51,7 +51,7 @@ const AboutNiramaya = () => {
             Want to know more? Connect with us.
           </p>
           <div className="flex justify-center space-x-6">
-            <a href="#linkedin" className="p-3 bg-gray-800 rounded-md hover:bg-gray-700 transition-colors">
+            <a href="https://www.linkedin.com/company/niramaya-healthtech" className="p-3 bg-gray-800 rounded-md hover:bg-gray-700 transition-colors">
               <Linkedin size={24} color="white" />
             </a>
             <a href="#instagram" className="p-3 bg-gray-800 rounded-md hover:bg-gray-700 transition-colors">
