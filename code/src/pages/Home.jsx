@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import backgroud from "../../public/backgroud.png"
+
 
 const HomePage = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -22,7 +22,7 @@ const HomePage = () => {
     <div className="min-h-screen relative overflow-hidden bg-black">
       {/* Background image with overlay */}
       <div className="absolute inset-0 z-0">
-        <img src={backgroud} alt="Background" className="object-cover w-full h-full" />
+        <img src="/bgImage.png" alt="Background" className="object-cover w-full h-full" />
         <div className="absolute inset-0 bg-black/70"></div>
       </div>
       
