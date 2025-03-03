@@ -1,47 +1,44 @@
 import React from 'react';
+import { FaMapMarkerAlt, FaRegClock } from 'react-icons/fa';
+import bgabout from "../assets/bgabout.png";
 
-function About() {
+const Aboutevent = () => {
   return (
-    <section id="about" className="min-h-screen bg-gradient-to-br from-black via-purple-900 to-blue-900 text-white py-16 px-6">
-      <div className="container mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">About Producing 101</h2>
+    <div
+      className="relative w-full bg-cover bg-center py-20"
+      style={{ backgroundImage: `url(${bgabout})` }}
+    >
+      <div className="absolute inset-0 bg-black opacity-60"></div>
+      
+      <div className="relative z-10 container mx-auto px-6 text-white">
+        <div className="text-center mb-10">
+          <h1 className="text-5xl font-bold tracking-tight">About Producting 101</h1>
+        </div>
         
-        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="max-w-xl">
-            <p className="text-xl mb-4">
-              Join our two-day ideathon where <span className="text-blue-400">ideas</span> lead the way! Pitch your boldest ideas to real-world challenges and compete for an exciting <span className="text-green-400">internship opportunity</span>!
+        <div className="flex flex-col md:flex-row justify-between items-start gap-8 max-w-4xl mx-auto">
+          <div className="flex-1 text-lg leading-relaxed">
+            <p>
+              Join our two-day ideathon where{' '}
+              <span className="font-bold text-blue-400">ideas</span> lead the way! 
+              Pitch your boldest ideas to real-world challenges and compete for an exciting{' '}
+              <span className="font-bold text-blue-400">internship opportunity</span>!
             </p>
           </div>
           
-          <div className="flex flex-col gap-6">
-            <div className="flex items-center gap-4">
-              <div className="bg-purple-700 p-4 rounded-full">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                  <circle cx="12" cy="10" r="3"></circle>
-                </svg>
-              </div>
-              <div>
-                <p className="text-lg">DEI, Basic Engineering lab,<br />SRMIST</p>
-              </div>
+          <div className="mt-6 md:mt-0 md:w-1/3">
+            <div className="flex items-center gap-3 mb-4 text-lg">
+              <FaMapMarkerAlt className="text-blue-400" size={22} />
+              <span>DEI, Basic Engineering Lab, SRMIST</span>
             </div>
-            
-            <div className="flex items-center gap-4">
-              <div className="bg-purple-700 p-4 rounded-full">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 6 12 12 16 14"></polyline>
-                </svg>
-              </div>
-              <div>
-                <p className="text-lg">22nd-23rd February, 2025</p>
-              </div>
+            <div className="flex items-center gap-3 text-lg">
+              <FaRegClock className="text-blue-400" size={22} />
+              <span>22nd-23rd February, 2025</span>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
-}
+};
 
-export default About;
+export default Aboutevent;
