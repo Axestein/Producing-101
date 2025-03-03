@@ -2,7 +2,7 @@ import { Linkedin, Instagram, Mail } from "lucide-react";
 
 const AboutNiramaya = () => {
   return (
-    <section className="relative w-full min-h-screen bg-black text-white flex flex-col items-center justify-center py-16 px-6 overflow-hidden">
+    <section className="relative w-full min-h-screen bg-black text-white flex flex-col items-center justify-center py-16 px-6 overflow-hidden" style={{ backgroundImage: "url('/bgImage.jpg')" }}>
       {/* Background gradient effects */}
       <div className="absolute top-1/3 left-1/2 w-64 h-64 rounded-full bg-purple-600 filter blur-3xl opacity-20 transform -translate-x-1/2 -translate-y-1/2"></div>
       <div className="absolute bottom-1/3 right-1/3 w-64 h-64 rounded-full bg-blue-600 filter blur-3xl opacity-20"></div>
